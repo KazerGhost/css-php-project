@@ -1,0 +1,203 @@
+/* styling reset and behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* font for bigger texts*/
+h1, h2 , div{
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+/* styling for paragraph text/small text*/
+p, a {
+    font-family: 'Funnel Display', sans-serif ;
+}
+/* body styling */
+body {
+    min-height: 100vh;
+    color: gray;
+}
+
+/* nav styling*/
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-column-gap: 30px;
+    grid-template-rows: 70px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* user refurbished logo styling */
+nav .brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #245990;
+}
+
+/* nav anchor styling */
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 35px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #245990;
+    font-size: 18px;
+}
+/* nav hover/active styling*/
+nav a:hover, nav a.active {
+    background: #245990;
+    color: #fff;
+    border-radius: 3px;
+}
+/* header styling */
+header {
+    padding:40px 20px;
+    background-color: #f4f4f4;
+    color: #8b8b8b;
+}
+/* header paragraph tag styling*/
+header p {
+    margin-top: 20px;
+    line-height: 28px;
+}
+/* main styling to seperate the to sections */
+main {
+    padding: 20px;
+    display: grid;
+    /* size change for the left/right sections */
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #555555;
+}
+/* title styling */
+main .section-title{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* left section styling */
+main .left{
+    border-right: thin solid #d4d4d4;
+    padding-right: 20px;
+}
+
+/* left section anchor styling*/
+main .left a{
+    display: block;
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* anchor hover styling */
+main .left a:hover {
+    text-decoration: underline;
+}
+
+/* right product row styling */
+main .right .product{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    /*border-bottom: thin solid #d4d4d4;*/
+    margin-bottom: 20px;
+}
+
+/* product image styling */
+main .right .product-left img{
+    max-height: 150px;
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* right title anchor styling */
+main .right .title a{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #555;
+    line-height: 26px;
+}
+/* underline for anchor hover */
+main .right .title a:hover {
+    text-decoration: underline;
+}
+/* margin for the description */
+main .right .description {
+    margin-top: 10px;
+}
+
+/* price / edit / delete section styling*/
+.price-delete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px ;
+}
+
+/* anchor styling */
+.price-delete a {
+    margin-top: 30px;
+    cursor: pointer;
+    color: #555;
+    text-decoration: none;
+}
+
+/* underline on hover */
+.price-delete a:hover {
+    text-decoration: underline;
+}
+
+/* change the color and font of the price */
+main .right .price{
+    font-size: 24px;
+    margin-top: 30px;
+    color: maroon;
+}
+
+/* footer styling */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    position: fixed;
+    bottom: 0;
+
+}
+
+/* footer anchor styling */
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 35px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #ffffff;
+    font-size: 18px;
+}
+/* hover/ active styling for footer anchors*/
+footer a:hover, footer a.active {
+    background: #fff;
+    color: #333;
+    border-radius: 3px;
+}

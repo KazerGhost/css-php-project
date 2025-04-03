@@ -1,0 +1,42 @@
+/* Center the main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Styling for the about section */
+.about-main {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Heading styles */
+.about-main h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #007bff; /* Accent color */
+}
+
+/* Paragraph styling */
+.about-main p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+}

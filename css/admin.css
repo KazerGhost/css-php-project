@@ -1,0 +1,38 @@
+/* Body styling */
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 90px
+}
+/* table styling */
+table {
+    width: 50%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* styling for table header and table data cells*/
+th, td {
+    font-family: "Funnel Display", sans-serif;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Color styling for the table header*/
+th {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+/* Styling for the delete button*/
+.delete-btn {
+    color: #555;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* Delete button hover effect*/
+.delete-btn:hover {
+    color: red;
+    text-decoration: underline;
+}
